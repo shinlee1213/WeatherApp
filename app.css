@@ -12,7 +12,15 @@ h2 {
   font-family: "Metal Mania", cursive;
   text-align: center;
 }
-
+h3 {
+  color: darkgreen;
+  font-family: "Metal Mania", cursive;
+  text-align: center;
+}
+.weatherImage {
+  display: block;
+  margin: 0 auto;
+}
 .float-left {
   color: darkgreen;
   font-family: "Metal Mania", cursive;
@@ -27,6 +35,12 @@ h2 {
   display: block;
   margin: 0 auto;
   margin-top: 20px;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 form {
   text-align: center;
@@ -45,4 +59,5 @@ button {
 }
 .open-source {
   text-align: center;
+  font-size: 13px;
 }
