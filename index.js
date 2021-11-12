@@ -38,15 +38,6 @@ function searchCity() {
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", searchCity);
 
-/* function celsius() {
-  event.preventDefault();
-  let changeCelsius = document.querySelector("#celsius");
-  let span = document.querySelector("span");
-  span.innerHTML = "37";
-}
-let element = document.querySelector("#celsius");
-element.addEventListener("click", celsius); */
-
 function showWeather(response) {
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#currentTemperature").innerHTML = Math.round(
@@ -76,3 +67,9 @@ function getCurrentLocation(event) {
 }
 let button = document.querySelector("#currentLocation");
 button.addEventListener("click", getCurrentLocation);
+
+function showCelsius(event) {
+  event.preventDefault;
+}
+let celsius = document.querySelector("#celsius");
+celsius.addEventListener("click", showCelsius);
