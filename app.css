@@ -26,6 +26,7 @@ h3 {
   font-family: "Metal Mania", cursive;
   text-align: center;
   font-size: 40px;
+  text-decoration: none;
 }
 .panel {
   border: 10px solid green;
