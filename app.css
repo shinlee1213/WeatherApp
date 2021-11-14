@@ -21,15 +21,20 @@ h3 {
   display: block;
   margin: 0 auto;
 }
-.float-left {
+.d-flex {
   color: darkgreen;
   font-family: "Metal Mania", cursive;
   text-align: center;
   font-size: 40px;
+  margin-left: 100px;
 }
-.float-left a {
+
+.d-flex a {
   text-decoration: none;
   color: darkgreen;
+}
+.d-flex .units {
+  font-size: 30px;
 }
 .panel {
   border: 10px solid green;
