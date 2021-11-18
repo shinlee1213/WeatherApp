@@ -92,6 +92,13 @@ celsius.addEventListener("click", showCelsius);
 let fahrenheit = document.querySelector("#fahrenheit-link");
 fahrenheit.addEventListener("click", showFahrenheit);
 
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = ["Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat"];
+  return days[day];
+}
+
 function showForecast(response) {
   let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
@@ -103,7 +110,7 @@ function showForecast(response) {
       forecastHTML =
         forecastHTML +
         `<div class="col-2">
-            <div class="week-forecast-date">${forecastDay.dt}</div>
+            <div class="week-forecast-date">${formatDay(forecastDay.dt)}</div>
             <img
               src="https://openweathermap.org/img/wn/${
                 forecastDay.weather[0].icon
