@@ -66,11 +66,6 @@ function showPosition(postion) {
   let url = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=imperial`;
   axios.get(url).then(showWeather);
 }
-function getCurrentLocation(event) {
-  navigator.geolocation.getCurrentPosition(showPosition);
-}
-let button = document.querySelector("#currentLocation");
-button.addEventListener("click", getCurrentLocation);
 
 function showCelsius(event) {
   event.preventDefault();
